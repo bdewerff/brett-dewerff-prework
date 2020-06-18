@@ -1,0 +1,33 @@
+#nav-bar {
+    text-align: center;
+    background: grey;
+    margin-bottom: 50px;
+}
+
+#left {
+    background: blue;
+    text-align: center;
+    width: 50%;
+    float: left;
+    height: 600px;
+    vertical-align: middle;
+    line-height: 600px;
+}
+
+#right {
+    background: red;
+    text-align: center;
+    width: 25%;
+    float: right;
+    height: 600px;
+    vertical-align: middle;
+    line-height: 600px;
+}
+
+#footer {
+    background: green;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

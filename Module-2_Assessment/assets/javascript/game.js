@@ -3,7 +3,8 @@ let guessesRemaining = 12;
 let lettersPossible = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 let lettersGuessed = [];
 const words = ["baseball", "tennis", "basketball", "rugby", "lacrosse", "golf", "volleyball", "wrestling", "equestrian"];
-let wordIndex = Math.floor(Math.random() * words.length + 1);
+let wordIndex = Math.floor(Math.random() * words.length);
+console.log(wordIndex);
 let word = words[wordIndex].split("");
 let finalWord = new Array(word.length);
 
@@ -68,6 +69,8 @@ function checkWin(finalWord)
     if (finalWord.includes("_ ") === false)
     {
         wins += 1;
+        console.log("assets/images/" + word + ".jpg");
+        document.querySelector('#wordImage').src = "assets/images/" + finalWord.join("") + ".jpg";
         document.querySelector('#winsCounter').innerHTML = wins;
         refresh();
     }

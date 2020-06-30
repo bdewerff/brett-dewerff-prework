@@ -4,22 +4,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hangman</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
 </head>
 
 <body>
-  <p> Press any Key to get started!</p>
-  <p id="winsHeader"> Wins: </p>
-  <p id="winsCounter">0</p>
+  <img src = "assets/images/title.png" alt="Sports Hangman" class="center">
+  <div class = "container">
+    <div class = "row">
+      <div id="image" class = "column">
+        <img src = "assets/images/baseball.jpg" alt="baseball" id="wordImage">
+      </div>
+      <div class = "column">
+        <p> Press any Key to get started!</p>
+        <p id="winsHeader"> Wins: </p>
+        <p id="winsCounter">0</p>
 
-  <p id="wordHeader">Current Word: </p>
-  <p id="word"><br></p>
+        <p id="wordHeader">Current Word: </p>
+        <p id="word"><br></p>
 
-  <p id="guessesHeader">Number of guesses Remaining: </p>
-  <p id="guesses"></p>
+        <p id="guessesHeader">Number of guesses Remaining: </p>
+        <p id="guesses"></p>
 
-  <p id="lettersHeader">Letters Guessed: </p>
-  <p id="letters"></p>
+        <p id="lettersHeader">Letters Guessed: </p>
+        <p id="letters"></p>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/javascript/game.js"></script>
 </body>
